@@ -33,7 +33,7 @@ Also the following lines are the type of bit manipulation FIELD_PREP() tries to 
 -      (((6 - (width) / 4) << 4) & SPDIFRX_MR_DATAWIDTH_MASK)
 ```
 
-Even though these operations are basically the definitions of FIELD_GET() and FIELD_PREP(), I wonder if the fact that these operations are being made on "#define" lines may pose a problem (I checked and there are some FIELD_GET() and FIELD_PREP() on "#define" lines of other files in the kernel, but I am not sure if the maintainers of these drivers specifically are also willing to use that type of practice).
+Even though these operations are basically the definitions of FIELD_GET() and FIELD_PREP(), I wonder if the fact that these operations are being made on "#define" lines may pose a problem (I checked and there are some FIELD_GET() and FIELD_PREP() on "#define" lines of other files in the kernel, but I am not sure if the maintainers of these modules specifically are also willing to use that type of practice).
 
 # A typo!
 
